@@ -1,0 +1,271 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rainforest_day",
+            "source_file": "background/rainforest_day/rainforest_day(2)41.wav",
+            "source_time": 3.762654035798201,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 6.601014321539219,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)6.wav",
+            "source_time": 3.4952703637176707,
+            "event_time": 0.0,
+            "event_duration": 6.601014321539219,
+            "snr": -4.2739441498439765,
+            "role": "foreground",
+            "pitch_shift": -6.363235049320979,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 4.3440445237880585,
+          "duration": 2.1639887354039686,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)8.wav",
+            "source_time": 0.32802683129494525,
+            "event_time": 4.3440445237880585,
+            "event_duration": 2.1639887354039686,
+            "snr": -2.420969025512138,
+            "role": "foreground",
+            "pitch_shift": 12.251932095865858,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 5.242528618086932,
+          "duration": 1.9936899118007605,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)14.wav",
+            "source_time": 17.531100645647044,
+            "event_time": 5.242528618086932,
+            "event_duration": 1.9936899118007605,
+            "snr": -0.9233751164144142,
+            "role": "foreground",
+            "pitch_shift": 5.835056992193504,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "fg_path": "foreground",
+          "bg_path": "background",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                6
+              ],
+              [
+                "uniform",
+                1,
+                4
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                1,
+                2
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                0
+              ],
+              [
+                "uniform",
+                1,
+                10
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "rainforest_day"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "chopping"
+          ],
+          "bg_labels": [
+            "rainforest_day",
+            "rainforest_night",
+            "rainforest_rain",
+            "rainforest_river"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": 0,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 3,
+          "polyphony_max": 3,
+          "polyphony_gini": 0.5491006972138373,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.0.3"
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}

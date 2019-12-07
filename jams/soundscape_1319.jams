@@ -1,0 +1,324 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rainforest_day",
+            "source_file": "background/rainforest_day/rainforest_day(1)0.wav",
+            "source_time": 3.269365748569646,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 7.928644155198411,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)6.wav",
+            "source_time": 7.303188668195699,
+            "event_time": 0.0,
+            "event_duration": 7.928644155198411,
+            "snr": -3.6550142629285274,
+            "role": "foreground",
+            "pitch_shift": -8.775405669083225,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.6740473809930104,
+          "duration": 4.354743687338184,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)15.wav",
+            "source_time": 18.152383124464215,
+            "event_time": 0.6740473809930104,
+            "event_duration": 4.354743687338184,
+            "snr": -3.5581332545091797,
+            "role": "foreground",
+            "pitch_shift": -10.828312475138397,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2336705978456348,
+          "duration": 2.843705423388819,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)13.wav",
+            "source_time": 8.374290626227943,
+            "event_time": 1.2336705978456348,
+            "event_duration": 2.843705423388819,
+            "snr": -3.7541252963868406,
+            "role": "foreground",
+            "pitch_shift": 1.0077163772045097,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 3.9462409068935074,
+          "duration": 4.274205454398544,
+          "value": {
+            "label": "chopping",
+            "source_file": "foreground/chopping/chopping(1)18.wav",
+            "source_time": 7.114240378780283,
+            "event_time": 3.9462409068935074,
+            "event_duration": 4.274205454398544,
+            "snr": -1.9034713039687015,
+            "role": "foreground",
+            "pitch_shift": 12.712512357798495,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "fg_path": "foreground",
+          "bg_path": "background",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                0
+              ],
+              [
+                "uniform",
+                1,
+                10
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                6
+              ],
+              [
+                "uniform",
+                1,
+                4
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                5
+              ],
+              [
+                "uniform",
+                1,
+                5
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chopping"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                3
+              ],
+              [
+                "uniform",
+                1,
+                7
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "rainforest_day"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "chopping"
+          ],
+          "bg_labels": [
+            "rainforest_day",
+            "rainforest_night",
+            "rainforest_rain",
+            "rainforest_river"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": 0,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 4,
+          "polyphony_max": 4,
+          "polyphony_gini": 0.6941418371242467,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.0.3"
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}

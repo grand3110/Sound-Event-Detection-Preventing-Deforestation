@@ -1,0 +1,324 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rainforest_day",
+            "source_file": "background/rainforest_day/rainforest_day(1)12.wav",
+            "source_time": 10.110569112428502,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 1.6000812307870407,
+          "value": {
+            "label": "chainsaw",
+            "source_file": "foreground/chainsaw/chainsaw(1)12.wav",
+            "source_time": 2.39739210445983,
+            "event_time": 0.0,
+            "event_duration": 1.6000812307870407,
+            "snr": -0.5354937017352563,
+            "role": "foreground",
+            "pitch_shift": -9.787793385111971,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6232050636990207,
+          "duration": 2.7857025752299864,
+          "value": {
+            "label": "chainsaw",
+            "source_file": "foreground/chainsaw/chainsaw(2)4.wav",
+            "source_time": 2.159042866709735,
+            "event_time": 2.6232050636990207,
+            "event_duration": 2.7857025752299864,
+            "snr": -0.9423655263338775,
+            "role": "foreground",
+            "pitch_shift": -0.6530472071131541,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 4.9887754304977285,
+          "duration": 2.9826217399390553,
+          "value": {
+            "label": "chainsaw",
+            "source_file": "foreground/chainsaw/chainsaw(1)10.wav",
+            "source_time": 5.634738788226352,
+            "event_time": 4.9887754304977285,
+            "event_duration": 2.9826217399390553,
+            "snr": -1.9163418481281616,
+            "role": "foreground",
+            "pitch_shift": 14.645261333387868,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 6.864332848026414,
+          "duration": 1.9481702165495158,
+          "value": {
+            "label": "chainsaw",
+            "source_file": "foreground/chainsaw/chainsaw(2)3.wav",
+            "source_time": 11.919812407049019,
+            "event_time": 6.864332848026414,
+            "event_duration": 1.9481702165495158,
+            "snr": -2.7971791279731266,
+            "role": "foreground",
+            "pitch_shift": 14.46157852228956,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "fg_path": "foreground",
+          "bg_path": "background",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "chainsaw"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                1,
+                2
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chainsaw"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                3
+              ],
+              [
+                "uniform",
+                1,
+                7
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chainsaw"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                0
+              ],
+              [
+                "uniform",
+                1,
+                10
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ],
+            [
+              [
+                "const",
+                "chainsaw"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "uniform",
+                0,
+                5
+              ],
+              [
+                "uniform",
+                1,
+                5
+              ],
+              [
+                "uniform",
+                -5,
+                0
+              ],
+              "foreground",
+              [
+                "uniform",
+                -15,
+                15
+              ],
+              null
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "rainforest_day"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                20
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "chainsaw"
+          ],
+          "bg_labels": [
+            "rainforest_day",
+            "rainforest_night",
+            "rainforest_rain",
+            "rainforest_river"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": 0,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 4,
+          "polyphony_max": 2,
+          "polyphony_gini": 0.6762342529675397,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.0.3"
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}
